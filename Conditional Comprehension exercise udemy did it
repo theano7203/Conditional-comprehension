@@ -1,0 +1,77 @@
+number = [
+    ["1", "2", "3", "4", "5", "6","7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
+
+]
+#for meal in menu:
+#print(meal, "contains chicken" if "chicken" in meal else "contains bacon" if "bacon" in meal else "contains number")
+
+for x in range(1, 16):
+    fizzbuzz = "fizz buzz" if x % 15 == 0 else "fizz" if x % 3 == 0 else "buzz" if x % 5 == 0 else str(x)
+    print(fizzbuzz)
+
+def result(fizzbuzz):
+
+    # iterate from 0 to N
+    for num in range(0, 16):
+
+        # Short-circuit operator is used
+        if num % 3 == 0 and num % 5 == 0:
+            print(str(num) + " ", end = "")
+            print("fizzbuzz")
+
+        else:
+            pass
+
+    for num in range(0, 16):
+
+        # Short-circuit operator is used
+        if num % 3 == 0:
+            print(str(num) + " ", end = "")
+            print("fizz")
+        else:
+            pass
+
+    for num in range(0, 16):
+
+        # Short-circuit operator is used
+        if num % 5 == 0:
+             print(str(num) + " ", end = "")
+             print("buzz")
+        else:
+            pass
+
+if __name__ == "__main__":
+
+    # input goes here
+    N = 100
+
+    # Calling function
+    result(N)
+"C:\Users\Page\venv4\Scripts\python.exe      Python Programs/Part 2 Conditional Comprehension/Challenge.py"
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+11
+fizz
+13
+14
+fizz buzz
+0 fizzbuzz
+15 fizzbuzz
+0 fizz
+3 fizz
+6 fizz
+9 fizz
+12 fizz
+15 fizz
+0 buzz
+5 buzz
+10 buzz
+15 buzz
